@@ -115,3 +115,15 @@ window.onload = function () {
 // }
 
 // startButton.addEventListener("click", startTimer);
+    window.addEventListener('load', function () {
+      const spinner = document.querySelector('.loader');
+      setTimeout(function () {
+        spinner.classList.add('remove');
+      }, 1500);
+      setTimeout(function () {
+        document.body.style.overflowY = "auto";
+      }, 1500);
+      setTimeout(function () {
+        spinner.style.display = "none";
+      }, 2000);
+    });
