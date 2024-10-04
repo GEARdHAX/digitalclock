@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>DIGITAL CLOCK</title>
+ <link rel="stylesheet" href="./style.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+ <h1 style="color: white;">Digital Clock</h1>
+ <div data-aos="zoom-in" id="digital-container" class="clock" onload="showtime()"></div>
+ <div data-aos="fade-right" class="date">
+  <p><span>4 October 2024</span></p>
+ </div>
+ <div data-aos="zoom-in" class="wrapper">
+  <h2>Stopwatch</h2>
+  <p style="color: #39ff14;"><span id="seconds">00</span>:<span id="tens">00</span></p>
+  <button id="button-start">Start</button>
+  <button id="button-stop">Stop</button>
+  <button id="button-reset">Reset</button>
+ </div>
+
+ <div class="wrapper2">
+  <h1>COUNTDOWN TIMER</h1>
+
+  <div data-aos="zoom-in" id="timer">
+   <span id="minutes2">01</span>:<span id="seconds2">00</span>
+  </div>
+  <button id="startbtn">Start</button>
+  <audio id="buzzSound" src="Better Off Alone Slowed + reverb.mp3"></audio>
+ </div>
+ <script src="script.js"></script>
+ <script src="timer.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+  AOS.init();
+ </script>
+</body>
+
+</html>
